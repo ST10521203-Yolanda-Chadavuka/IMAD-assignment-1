@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvHerafood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="75dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Hera time to eat"
+        android:textColor="#49228E"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="75dp"
+        android:text="Hera's Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHerafood" />
+
+    <EditText
+        android:id="@+id/tvFillName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvMeals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="75dp"
+        android:text="Meals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFillName" />
+
+    <Spinner
+        android:id="@+id/swListofMeals"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMeals" />
+
+    <Button
+        android:id="@+id/btnSuggest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="75dp"
+        android:text="Suggest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swListofMeals" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSuggest" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="336dp"
+        android:layout_height="267dp"
+        app:srcCompat="@drawable/e734f077b9c79900a0fcffa2b50f65b7"
+        tools:layout_editor_absoluteX="-201dp"
+        tools:layout_editor_absoluteY="485dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="213dp"
+        android:layout_height="256dp"
+        app:srcCompat="@drawable/adbacab0090b869bcf41ad1b8604acc9"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="537dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
